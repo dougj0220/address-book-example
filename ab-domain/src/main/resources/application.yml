@@ -1,0 +1,24 @@
+# Spring properties
+spring:
+  application:
+    name: ab-domain
+  datasource:
+    url: jdbc:mysql://localhost:3306/abdb
+    username: abbyuser
+    password: password
+    driverClassName: com.mysql.jdbc.Driver
+    testWhileIdle: true
+    validationQuery: SELECT 1
+  jpa:
+    show-sql: false
+    hibernate:
+      ddl-auto: update
+      naming:
+        strategy: org.hibernate.cfg.ImprovedNamingStrategy
+    properties:
+        hibernate:
+            dialect: org.hibernate.dialect.MySQL5Dialect
+oauth2:
+  client:
+    id: 1443640831942
+    secret: $2a$10$tlW.5uo8z5UZd6/56dRZC.gKlJv2OKrwZzMvjN1ZlXmQgzNlwXwdi

@@ -1,0 +1,9 @@
+/Users/djeremias/java/dev/ab-parent/ab-domain/src/main/java/io/doug/entity/User.java
+/Users/djeremias/java/dev/ab-parent/ab-domain/src/main/java/io/doug/UserRepository.java
+/Users/djeremias/java/dev/ab-parent/ab-domain/src/main/java/io/doug/entity/Contact.java
+/Users/djeremias/java/dev/ab-parent/ab-domain/src/main/java/io/doug/AbDomainApplication.java
+/Users/djeremias/java/dev/ab-parent/ab-domain/src/main/java/io/doug/service/UserService.java
+/Users/djeremias/java/dev/ab-parent/ab-domain/src/main/java/io/doug/entity/Role.java
+/Users/djeremias/java/dev/ab-parent/ab-domain/src/main/java/io/doug/ContactRepository.java
+/Users/djeremias/java/dev/ab-parent/ab-domain/src/main/java/io/doug/exception/BusinessException.java
+/Users/djeremias/java/dev/ab-parent/ab-domain/src/main/java/io/doug/service/ContactService.java

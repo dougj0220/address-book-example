@@ -1,0 +1,10 @@
+io/doug/config/OAuth2ServerConfiguration$AuthorizationServerConfiguration.class
+io/doug/controller/ContactController.class
+io/doug/AbRestApplication.class
+io/doug/controller/OAuthController.class
+io/doug/config/OAuth2ServerConfiguration.class
+io/doug/rest/ApiResponse.class
+io/doug/config/OAuth2ServerConfiguration$ResourceServerConfiguration.class
+io/doug/config/WebSecurityConfiguration.class
+io/doug/controller/UserController.class
+io/doug/exception/GlobalExceptionHandler.class

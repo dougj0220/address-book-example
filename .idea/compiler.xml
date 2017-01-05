@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="ab-domain" />
+        <module name="ab-rest" />
+        <module name="ab-web" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="ab-domain" target="1.8" />
+      <module name="ab-parent" target="1.5" />
+      <module name="ab-rest" target="1.8" />
+      <module name="ab-web" target="1.8" />
+      <module name="address-book-monolith" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

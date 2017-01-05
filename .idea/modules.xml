@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/ab-domain/ab-domain.iml" filepath="$PROJECT_DIR$/ab-domain/ab-domain.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ab-rest/ab-rest.iml" filepath="$PROJECT_DIR$/ab-rest/ab-rest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ab-web/ab-web.iml" filepath="$PROJECT_DIR$/ab-web/ab-web.iml" />
+      <module fileurl="file://$PROJECT_DIR$/address-book-monolith.iml" filepath="$PROJECT_DIR$/address-book-monolith.iml" />
+    </modules>
+  </component>
+</project>

@@ -1,8 +1,0 @@
-/Users/djeremias/java/dev/ab-parent/ab-rest/src/main/java/io/doug/config/OAuth2ServerConfiguration.java
-/Users/djeremias/java/dev/ab-parent/ab-rest/src/main/java/io/doug/config/WebSecurityConfiguration.java
-/Users/djeremias/java/dev/ab-parent/ab-rest/src/main/java/io/doug/controller/UserController.java
-/Users/djeremias/java/dev/ab-parent/ab-rest/src/main/java/io/doug/controller/ContactController.java
-/Users/djeremias/java/dev/ab-parent/ab-rest/src/main/java/io/doug/AbRestApplication.java
-/Users/djeremias/java/dev/ab-parent/ab-rest/src/main/java/io/doug/controller/OAuthController.java
-/Users/djeremias/java/dev/ab-parent/ab-rest/src/main/java/io/doug/exception/GlobalExceptionHandler.java
-/Users/djeremias/java/dev/ab-parent/ab-rest/src/main/java/io/doug/rest/ApiResponse.java

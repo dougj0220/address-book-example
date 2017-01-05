@@ -2,180 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1d6cd794-3922-455b-b8ec-6708801a0415" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ab-domain/target/ab-domain.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ab-domain/target/classes/io/doug/AbDomainApplication.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ab-domain/target/classes/io/doug/ContactRepository.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ab-domain/target/classes/io/doug/UserRepository.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ab-domain/target/classes/io/doug/entity/Contact.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ab-domain/target/classes/io/doug/entity/Role$RoleNames.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ab-domain/target/classes/io/doug/entity/Role.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ab-domain/target/classes/io/doug/entity/User.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ab-domain/target/classes/io/doug/exception/BusinessException.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ab-domain/target/classes/io/doug/service/ContactService.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ab-domain/target/classes/io/doug/service/UserService.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ab-domain/target/test-classes/TestAbApplicationContext.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ab-domain/target/test-classes/io/doug/repository/ContactRepositoryTest.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ab-domain/target/test-classes/io/doug/service/ContactServiceTest.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ab-rest/target/ab-rest.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ab-rest/target/ab-rest.jar.original" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ab-rest/target/classes/io/doug/AbRestApplication.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ab-rest/target/classes/io/doug/config/OAuth2ServerConfiguration$AuthorizationServerConfiguration.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ab-rest/target/classes/io/doug/config/OAuth2ServerConfiguration$ResourceServerConfiguration.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ab-rest/target/classes/io/doug/config/OAuth2ServerConfiguration.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ab-rest/target/classes/io/doug/config/WebSecurityConfiguration.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ab-rest/target/classes/io/doug/controller/ContactController.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ab-rest/target/classes/io/doug/controller/OAuthController.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ab-rest/target/classes/io/doug/controller/UserController.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ab-rest/target/classes/io/doug/exception/GlobalExceptionHandler.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ab-rest/target/classes/io/doug/rest/ApiResponse.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ab-rest/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ab-web/target/ab.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ab-web/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ab-web/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/artifacts/ab_rest_war.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/artifacts/ab_rest_war_exploded.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/compiler.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/encodings.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__antlr_antlr_2_7_7.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__aopalliance_aopalliance_1_0.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__ch_qos_logback_logback_classic_1_1_8.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__ch_qos_logback_logback_core_1_1_8.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_classmate_1_3_3.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_annotations_2_8_5.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_core_2_8_5.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_databind_2_8_5.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_jayway_jsonpath_json_path_2_2_0.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_codec_commons_codec_1_10.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__dom4j_dom4j_1_6_1.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_undertow_undertow_core_1_3_25_Final.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_undertow_undertow_servlet_1_3_25_Final.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_undertow_undertow_websockets_jsr_1_3_25_Final.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_servlet_javax_servlet_api_3_1_0.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_transaction_javax_transaction_api_1_2.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_validation_validation_api_1_1_0_Final.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__junit_junit_4_12.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__mysql_mysql_connector_java_5_1_40.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__net_minidev_accessors_smart_1_1.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__net_minidev_json_smart_2_2_1.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tomcat_embed_tomcat_embed_core_8_5_6.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tomcat_embed_tomcat_embed_el_8_5_6.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tomcat_embed_tomcat_embed_websocket_8_5_6.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tomcat_tomcat_jdbc_8_5_6.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tomcat_tomcat_juli_8_5_6.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_aspectj_aspectjweaver_1_8_9.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_assertj_assertj_core_2_5_0.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_codehaus_jackson_jackson_core_asl_1_9_13.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_codehaus_jackson_jackson_mapper_asl_1_9_13.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_glassfish_javax_el_3_0_0.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hamcrest_hamcrest_core_1_3.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hamcrest_hamcrest_library_1_3.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hibernate_common_hibernate_commons_annotations_5_0_1_Final.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hibernate_hibernate_core_5_0_11_Final.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hibernate_hibernate_entitymanager_5_0_11_Final.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hibernate_hibernate_validator_5_2_4_Final.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hibernate_javax_persistence_hibernate_jpa_2_1_api_1_0_0_Final.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_javassist_javassist_3_20_0_GA.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jboss_jandex_2_0_0_Final.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jboss_logging_jboss_logging_3_3_0_Final.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jboss_spec_javax_annotation_jboss_annotations_api_1_2_spec_1_0_0_Final.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jboss_spec_javax_websocket_jboss_websocket_api_1_1_spec_1_1_0_Final.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jboss_xnio_xnio_api_3_3_6_Final.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jboss_xnio_xnio_nio_3_3_6_Final.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_json_json_20140107.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_mockito_mockito_core_1_10_19.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_objenesis_objenesis_2_1.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_ow2_asm_asm_5_0_3.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_skyscreamer_jsonassert_1_3_0.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_jcl_over_slf4j_1_7_22.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_jul_to_slf4j_1_7_22.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_log4j_over_slf4j_1_7_22.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_slf4j_api_1_7_22.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_1_4_3_RELEASE.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_actuator_1_4_3_RELEASE.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_autoconfigure_1_4_3_RELEASE.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_devtools_1_4_3_RELEASE.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_1_4_3_RELEASE.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_actuator_1_4_3_RELEASE.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_aop_1_4_3_RELEASE.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_data_jpa_1_4_3_RELEASE.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_jdbc_1_4_3_RELEASE.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_logging_1_4_3_RELEASE.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_security_1_4_3_RELEASE.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_test_1_4_3_RELEASE.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_tomcat_1_4_3_RELEASE.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_undertow_1_4_3_RELEASE.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_web_1_4_3_RELEASE.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_test_1_4_3_RELEASE.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_test_autoconfigure_1_4_3_RELEASE.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_data_spring_data_commons_1_12_6_RELEASE.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_data_spring_data_jpa_1_10_6_RELEASE.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_security_oauth_spring_security_oauth2_2_0_7_RELEASE.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_security_spring_security_config_4_1_4_RELEASE.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_security_spring_security_core_4_1_4_RELEASE.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_security_spring_security_web_4_1_4_RELEASE.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_aop_4_3_5_RELEASE.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_aspects_4_3_5_RELEASE.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_beans_4_3_5_RELEASE.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_context_4_3_5_RELEASE.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_context_support_4_3_5_RELEASE.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_core_4_3_5_RELEASE.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_expression_4_3_5_RELEASE.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_jdbc_4_3_5_RELEASE.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_orm_4_3_5_RELEASE.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_test_4_3_5_RELEASE.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_tx_4_3_5_RELEASE.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_web_4_3_5_RELEASE.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_webmvc_4_3_5_RELEASE.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_yaml_snakeyaml_1_17.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__xml_apis_xml_apis_1_4_01.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ab-domain/ab-domain.iml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ab-domain/pom.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ab-domain/src/main/java/io/doug/AbDomainApplication.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ab-domain/src/main/java/io/doug/ContactRepository.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ab-domain/src/main/java/io/doug/UserRepository.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ab-domain/src/main/java/io/doug/entity/Contact.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ab-domain/src/main/java/io/doug/entity/Role.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ab-domain/src/main/java/io/doug/entity/User.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ab-domain/src/main/java/io/doug/exception/BusinessException.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ab-domain/src/main/java/io/doug/service/ContactService.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ab-domain/src/main/java/io/doug/service/UserService.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ab-domain/src/main/resources/application.yml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ab-domain/src/test/java/TestAbApplicationContext.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ab-domain/src/test/java/io/doug/repository/ContactRepositoryTest.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ab-domain/src/test/java/io/doug/service/ContactServiceTest.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ab-domain/target/classes/application.yml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ab-domain/target/maven-archiver/pom.properties" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ab-domain/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ab-domain/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ab-domain/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ab-domain/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ab-domain/target/surefire-reports/TEST-io.doug.repository.ContactRepositoryTest.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ab-domain/target/surefire-reports/TEST-io.doug.service.ContactServiceTest.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ab-domain/target/surefire-reports/io.doug.repository.ContactRepositoryTest.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ab-domain/target/surefire-reports/io.doug.service.ContactServiceTest.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ab-rest/ab-rest.iml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ab-rest/pom.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ab-rest/src/main/java/io/doug/AbRestApplication.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ab-rest/src/main/java/io/doug/config/OAuth2ServerConfiguration.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ab-rest/src/main/java/io/doug/config/WebSecurityConfiguration.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ab-rest/src/main/java/io/doug/controller/ContactController.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ab-rest/src/main/java/io/doug/controller/OAuthController.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ab-rest/src/main/java/io/doug/controller/UserController.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ab-rest/src/main/java/io/doug/exception/GlobalExceptionHandler.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ab-rest/src/main/java/io/doug/rest/ApiResponse.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ab-rest/target/maven-archiver/pom.properties" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ab-rest/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ab-rest/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ab-web/ab-web.iml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ab-web/pom.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ab-web/target/maven-archiver/pom.properties" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/address-book-monolith.iml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pom.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -1017,7 +844,7 @@
       <updated>1482867357501</updated>
       <workItem from="1482867359055" duration="6688000" />
       <workItem from="1483454495239" duration="82000" />
-      <workItem from="1483454627331" duration="17701000" />
+      <workItem from="1483454627331" duration="17743000" />
     </task>
     <servers />
   </component>
@@ -1033,7 +860,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="24471000" />
+    <option name="totallyTimeSpent" value="24513000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-1" y="26" width="1375" height="833" extended-state="0" />

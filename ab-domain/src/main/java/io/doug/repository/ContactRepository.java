@@ -1,4 +1,4 @@
-package io.doug;
+package io.doug.repository;
 
 import io.doug.entity.Contact;
 import org.springframework.data.jpa.repository.JpaRepository;

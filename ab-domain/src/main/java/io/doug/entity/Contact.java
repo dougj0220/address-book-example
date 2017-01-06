@@ -25,6 +25,9 @@ public class Contact implements Serializable {
 
     private String mobilePhone;
 
+    @ManyToOne(optional = false)
+    private User user;
+
     public Contact() {
         //empty ctor
     }
@@ -37,14 +40,10 @@ public class Contact implements Serializable {
     }
 
     public boolean validate() {
-        if (StringUtils.isEmpty(this.getFirstName())) {
+        if (StringUtils.isEmpty(this.getFirstName())
+                || StringUtils.isEmpty(this.getLastName())) {
             return false;
         }
-
-        if (StringUtils.isEmpty(this.getLastName())) {
-            return false;
-        }
-
         return true;
     }
 
@@ -86,5 +85,13 @@ public class Contact implements Serializable {
 
     public void setMobilePhone(String mobilePhone) {
         this.mobilePhone = mobilePhone;
+    }
+
+    public User getUser() {
+        return user;
+    }
+
+    public void setUser(User user) {
+        this.user = user;
     }
 }

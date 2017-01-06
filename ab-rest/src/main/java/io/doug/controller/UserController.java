@@ -1,7 +1,7 @@
 package io.doug.controller;
 
 import io.doug.entity.User;
-import io.doug.rest.ApiResponse;
+import io.doug.util.ApiResponse;
 import io.doug.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;

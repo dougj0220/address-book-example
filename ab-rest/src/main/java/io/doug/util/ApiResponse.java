@@ -1,4 +1,4 @@
-package io.doug.rest;
+package io.doug.util;
 
 import java.io.Serializable;
 

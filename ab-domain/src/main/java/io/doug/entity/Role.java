@@ -34,7 +34,15 @@ public class Role implements GrantedAuthority {
 	@Column(nullable = false)
 	private String name;
 
-	@Override
+	public Role() {
+	    // empty ctor
+    }
+
+    public Role(String name) {
+        this.name = name;
+    }
+
+    @Override
 	public String getAuthority() {
 		return name;
 	}

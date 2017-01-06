@@ -2,7 +2,7 @@ package io.doug.service;
 
 import io.doug.entity.User;
 import io.doug.exception.BusinessException;
-import io.doug.UserRepository;
+import io.doug.repository.UserRepository;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;

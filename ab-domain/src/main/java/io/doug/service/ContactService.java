@@ -2,7 +2,7 @@ package io.doug.service;
 
 import io.doug.entity.Contact;
 import io.doug.exception.BusinessException;
-import io.doug.ContactRepository;
+import io.doug.repository.ContactRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

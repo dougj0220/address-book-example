@@ -8,9 +8,7 @@ import org.springframework.security.core.userdetails.UserDetails;
 
 import javax.persistence.*;
 import java.io.Serializable;
-import java.util.Collection;
-import java.util.HashSet;
-import java.util.Set;
+import java.util.*;
 
 /**
  * Created by djeremias on 12/27/16.
@@ -37,6 +35,9 @@ public class User  implements UserDetails, Serializable {
             @JoinColumn(name = "role_id")})
     private Set<Role> roles = new HashSet<>();
 
+    @OneToMany(mappedBy = "user")
+    private List<Contact> contacts = new ArrayList<>();
+
     public User() {
         // empty ctor
     }
@@ -49,6 +50,11 @@ public class User  implements UserDetails, Serializable {
         this.roles = user.getRoles();
     }
 
+
+    public User(String login, String password) {
+        this.login = login;
+        this.password = password;
+    }
 
     public Long getId() {
         return id;
@@ -81,6 +87,42 @@ public class User  implements UserDetails, Serializable {
 
     public void setRoles(Set<Role> roles) {
         this.roles = roles;
+    }
+
+    public List<Contact> getContacts() {
+        return contacts;
+    }
+
+    public void setContacts(List<Contact> contacts) {
+        this.contacts = contacts;
+    }
+
+    public Boolean hasRole(Role role) {
+        return roles.contains(role);
+    }
+
+    public void addRole(Role role) {
+        if (this.roles == null) {
+            this.roles = new HashSet<>();
+        }
+        if (!this.roles.contains(role)) {
+            this.roles.add(role);
+        }
+    }
+
+    public void addContact(Contact contact) {
+        if (this.contacts == null) {
+            this.contacts = new ArrayList<>();
+        }
+        if (!this.contacts.contains(contact)) {
+            this.contacts.add(contact);
+        }
+    }
+
+    public void removeContact(Contact contact) {
+        if (this.contacts.contains(contact)) {
+            this.contacts.remove(contact);
+        }
     }
 
     ////// UserDetails impl.....

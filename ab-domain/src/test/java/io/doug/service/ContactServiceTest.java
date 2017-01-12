@@ -36,7 +36,7 @@ public class ContactServiceTest {
         userRepository.save(user);
         contact = new Contact("Doug", "testing", "me@test.com", "412-555-1234");
         contact.setUser(user);
-        contactService.create(contact);
+        contactService.create(contact, user);
     }
 
     @Test
@@ -49,8 +49,7 @@ public class ContactServiceTest {
     @Test
     public void testCreate() throws Exception {
         Contact newContact = new Contact("newContact", "testing", "me@test.com", "412-555-1234");
-        newContact.setUser(user);
-        contactService.create(newContact);
+        contactService.create(newContact, user);
         Assert.isTrue(newContact.getId() != null);
     }
 }

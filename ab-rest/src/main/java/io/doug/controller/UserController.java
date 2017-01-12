@@ -26,7 +26,6 @@ public class UserController {
     @RequestMapping(value = "/{id}", method = RequestMethod.GET)
     public ResponseEntity<ApiResponse<User>> getUser(
             @AuthenticationPrincipal User authenticatedUser,
-            @RequestHeader("x-client-id") Long clientId,
             @PathVariable Long id) {
         ApiResponse<User> apiResponse = new ApiResponse<>(userService.getById(id));
 

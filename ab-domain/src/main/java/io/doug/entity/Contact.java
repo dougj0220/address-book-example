@@ -1,5 +1,6 @@
 package io.doug.entity;
 
+import com.fasterxml.jackson.annotation.JsonProperty;
 import org.hibernate.validator.constraints.Email;
 import org.springframework.util.StringUtils;
 
@@ -25,6 +26,7 @@ public class Contact implements Serializable {
 
     private String mobilePhone;
 
+    @JsonProperty(access = JsonProperty.Access.WRITE_ONLY)
     @ManyToOne(optional = false)
     private User user;
 
@@ -44,6 +46,10 @@ public class Contact implements Serializable {
                 || StringUtils.isEmpty(this.getLastName())) {
             return false;
         }
+        if (user == null) {
+            return false;
+        }
+
         return true;
     }
 

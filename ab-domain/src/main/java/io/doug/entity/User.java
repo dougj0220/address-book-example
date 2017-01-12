@@ -116,6 +116,7 @@ public class User  implements UserDetails, Serializable {
         }
         if (!this.contacts.contains(contact)) {
             this.contacts.add(contact);
+            contact.setUser(this);
         }
     }
 

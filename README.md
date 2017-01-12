@@ -1,1 +1,1 @@
-address-book-monolith-example CRUD application
+address book example CRUD application

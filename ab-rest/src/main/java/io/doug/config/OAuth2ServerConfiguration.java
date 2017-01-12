@@ -50,10 +50,7 @@ public class OAuth2ServerConfiguration {
 
         @Override
         public void configure(ResourceServerSecurityConfigurer resources) {
-            // @formatter:off
-            resources
-                    .resourceId(RESOURCE_ID);
-            // @formatter:on
+            resources.resourceId(RESOURCE_ID);
         }
 
         @Override
@@ -61,7 +58,7 @@ public class OAuth2ServerConfiguration {
             http
                 .authorizeRequests()
                 .antMatchers("/user/**").authenticated()
-                .antMatchers("/contact/**").hasAnyRole("SUPER_ADMIN")
+                .antMatchers("/contact/**").hasAnyRole("ROLE_USER","ROLE_ADMIN","SUPER_ADMIN") //same as auth()
                 .antMatchers( "/oauth/**").authenticated();
 //           http
 //       			.headers()
@@ -101,18 +98,15 @@ public class OAuth2ServerConfiguration {
         @Override
         public void configure(AuthorizationServerEndpointsConfigurer endpoints)
                 throws Exception {
-            // @formatter:off
             endpoints
                     .tokenStore(tokenStore())
                     .authenticationManager(this.authenticationManager)
                     .userDetailsService(userService);
                     //.tokenEnhancer(tokenEnhancer());
-            // @formatter:on
         }
 
         @Override
         public void configure(ClientDetailsServiceConfigurer clients) throws Exception {
-            // @formatter:off
             clients
                     .inMemory()
                     .withClient(getClientId)
@@ -122,8 +116,7 @@ public class OAuth2ServerConfiguration {
                     .resourceIds(RESOURCE_ID)
                     .secret(getClientSecret)
                     .refreshTokenValiditySeconds(0);
-//                    .accessTokenValiditySeconds(30);
-            // @formatter:on
+                    //.accessTokenValiditySeconds(30);
         }
 
         @Bean
@@ -135,7 +128,5 @@ public class OAuth2ServerConfiguration {
             //tokenServices.setTokenEnhancer(tokenEnhancer());
             return tokenServices;
         }
-
     }
-
 }

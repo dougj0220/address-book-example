@@ -10,10 +10,10 @@ import org.springframework.security.crypto.password.PasswordEncoder;
  * Created by djeremias on 12/27/16.
  */
 @SpringBootApplication
-public class AbDomainApplication {
+public class DomainApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(AbDomainApplication.class, args);
+        SpringApplication.run(DomainApplication.class, args);
     }
 
     @Bean

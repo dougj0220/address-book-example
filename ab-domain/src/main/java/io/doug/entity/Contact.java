@@ -34,6 +34,11 @@ public class Contact implements Serializable {
         //empty ctor
     }
 
+    public Contact(String firstName, String lastName) {
+        this.firstName = firstName;
+        this.lastName = lastName;
+    }
+
     public Contact(String firstName, String lastName, String email, String mobilePhone) {
         this.firstName = firstName;
         this.lastName = lastName;

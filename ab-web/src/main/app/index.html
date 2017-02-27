@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="abApp">
+<head>
+    <meta charset="UTF-8">
+    <title>doug e fresh address book v0.0.1</title>
+
+    <!-- jQuery -->
+    <script src="lib/jquery/jquery-2.1.4.js"></script>
+    <script src="lib/jquery/jquery-ui.min.js"></script>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/css/sidebar.css" rel="stylesheet" type="text/css">
+    <link href="assets/css/dropdowns-enhancement.css" rel="stylesheet" type="text/css">
+
+    <!-- Custom CSS-->
+    <link id="pagestyle" rel="stylesheet" type="text/css" href="assets/css/zola.css">
+
+    <!-- Font Awesome -->
+    <link href="assets/fonts/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+    <!-- Angular JS -->
+    <script src="lib/angular/angularjs/1.4.7/angular.js"></script>
+    <script src="lib/angular/angularjs/1.4.7/angular-animate.js"></script>
+    <script src="lib/angular/angularjs/1.4.7/angular-messages.js"></script>
+    <script src="lib/angular/angularjs/1.4.7/angular-resource.js"></script>
+    <script src="lib/angular/angular-ui-router/angular-ui-router-0.2.15.js"></script>
+    <script src="lib/angular/angular-ui-bootstrap/ui-bootstrap-tpls-0.14.1.js"></script>
+    <script src="lib/angular/angular-file-upload/ng-file-upload-shim.js"></script>
+    <script src="lib/angular/angular-file-upload/ng-file-upload.js"></script>
+</head>
+<body ng-controller="AppController">
+
+<div id="wrapper">
+    <!-- Navigation -->
+    <div>
+        <div ui-view="navbars"></div>
+    </div>
+    <!-- End Navigation - -->
+
+
+    <!-- Start Body -->
+    <div ui-view="body"></div>
+    <!-- End Body -->
+</div>
+
+
+<!-- Bootstrap Core JavaScript -->
+<script src="assets/bootstrap.js"></script>
+
+</body>
+</html>

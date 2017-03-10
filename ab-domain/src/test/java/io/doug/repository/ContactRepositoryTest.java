@@ -43,6 +43,6 @@ public class ContactRepositoryTest {
         contact = new Contact("doug", "testing", "email@test.com", "412-555-1234");
         contact.setUser(user);
         contactRepository.save(contact);
-        Assert.isTrue(contact.getId() != null);
+        Assert.isTrue(contact.getId() != null, "test create contact failed");
     }
 }

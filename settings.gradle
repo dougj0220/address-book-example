@@ -1,0 +1,8 @@
+rootProject.name = 'ab-parent'
+include ':ab-domain'
+include ':ab-rest'
+include ':ab-web'
+
+project(':ab-domain').projectDir = "$rootDir/ab-domain" as File
+project(':ab-rest').projectDir = "$rootDir/ab-rest" as File
+project(':ab-web').projectDir = "$rootDir/ab-web" as File

@@ -42,14 +42,14 @@ public class ContactServiceTest {
     @Test
     public void testGetById() throws Exception {
         Contact retVal = contactService.getById(contact.getId());
-        Assert.isTrue(retVal != null);
-        Assert.isTrue(retVal.getFirstName().equals(contact.getFirstName()));
+        Assert.isTrue(retVal != null, "test get by id did not return contact");
+        Assert.isTrue(retVal.getFirstName().equals(contact.getFirstName()), "returned first name does not match");
     }
 
     @Test
     public void testCreate() throws Exception {
         Contact newContact = new Contact("newContact", "testing", "me@test.com", "412-555-1234");
         contactService.create(newContact, user);
-        Assert.isTrue(newContact.getId() != null);
+        Assert.isTrue(newContact.getId() != null, "test create contact failed");
     }
 }

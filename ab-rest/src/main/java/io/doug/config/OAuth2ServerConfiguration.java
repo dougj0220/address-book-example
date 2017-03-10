@@ -19,11 +19,9 @@ import io.doug.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.beans.factory.annotation.Value;
-import org.springframework.boot.autoconfigure.security.SecurityProperties;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.Primary;
-import org.springframework.core.annotation.Order;
 import org.springframework.security.authentication.AuthenticationManager;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
 import org.springframework.security.oauth2.config.annotation.configurers.ClientDetailsServiceConfigurer;
@@ -44,7 +42,7 @@ public class OAuth2ServerConfiguration {
 
     @Configuration
     @EnableResourceServer
-    @Order(SecurityProperties.ACCESS_OVERRIDE_ORDER)
+    //@Order(SecurityProperties.ACCESS_OVERRIDE_ORDER) // moved to props file with 1.5 must use 3
     protected static class ResourceServerConfiguration extends
             ResourceServerConfigurerAdapter {
 
@@ -60,9 +58,9 @@ public class OAuth2ServerConfiguration {
                 .antMatchers("/user/**").authenticated()
                 .antMatchers("/contact/**").hasAnyRole("ROLE_USER","ROLE_ADMIN","SUPER_ADMIN") //same as auth()
                 .antMatchers( "/oauth/**").authenticated();
-//           http
-//       			.headers()
-//	        	.addHeaderWriter(new StaticHeadersWriter("Access-Control-Allow-Origin","*"));
+            /*http
+       			.headers()
+	        	.addHeaderWriter(new StaticHeadersWriter("Access-Control-Allow-Origin","*"));*/
         }
     }
 

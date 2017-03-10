@@ -2,3 +2,7 @@
 *.iml
 target
 .DS_STORE
+build/
+gradle
+gradlew
+.gradle/

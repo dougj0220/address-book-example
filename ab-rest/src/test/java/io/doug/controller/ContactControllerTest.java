@@ -8,7 +8,6 @@ import org.json.JSONObject;
 import org.junit.Ignore;
 import org.junit.Test;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.security.test.context.support.WithMockUser;
 import org.springframework.test.web.servlet.request.MockHttpServletRequestBuilder;
 import org.springframework.util.Assert;
 import org.springframework.web.bind.annotation.RequestMethod;
@@ -18,6 +17,7 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
 /**
  * Created by djeremias on 1/10/17.
  */
+@Ignore
 public class ContactControllerTest extends AbstractControllerTest {
 
     @Autowired
@@ -49,6 +49,6 @@ public class ContactControllerTest extends AbstractControllerTest {
                 .getContentAsString();
 
         JSONObject contactJson = new JSONObject(getResult).getJSONObject("payload");
-        Assert.isTrue(new Long(contactJson.getLong("id")).equals(contact.getId()));
+        Assert.isTrue(new Long(contactJson.getLong("id")).equals(contact.getId()), "contactJson id does not match");
     }
 }

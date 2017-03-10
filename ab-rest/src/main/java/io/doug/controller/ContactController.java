@@ -4,7 +4,10 @@ import io.doug.entity.Contact;
 import io.doug.entity.User;
 import io.doug.service.ContactService;
 import io.doug.util.ApiResponse;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.http.HttpStatus;
@@ -19,7 +22,12 @@ import org.springframework.web.bind.annotation.*;
 @RequestMapping("/contact")
 public class ContactController {
 
+    private static final Logger LOG = LoggerFactory.getLogger(ContactController.class);
+
     private final ContactService contactService;
+
+    @Value("${doug.test}")
+    private String test;
 
     @Autowired
     public ContactController(ContactService contactService) {
@@ -47,6 +55,7 @@ public class ContactController {
 
     @RequestMapping(value = "/{id}", method = RequestMethod.GET)
     public ResponseEntity<ApiResponse<Contact>> getContactById(@PathVariable Long id) {
+        LOG.info("value of test: {}", test);
         ApiResponse<Contact> apiResponse = new ApiResponse<>(contactService.getById(id));
 
         return new ResponseEntity<>(apiResponse, HttpStatus.OK);

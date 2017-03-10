@@ -7,6 +7,7 @@ import io.doug.entity.User;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
@@ -24,6 +25,9 @@ public class ContactService {
     private static final Logger LOG = LoggerFactory.getLogger(ContactService.class);
 
     private final ContactRepository contactRepository;
+
+    @Value("${doug.test}")
+    private String test;
 
     @Autowired
     public ContactService(ContactRepository contactRepository) {
@@ -55,6 +59,7 @@ public class ContactService {
     }
 
     public Contact getById(Long id) {
+        LOG.info("value of test: {}", test);
         if (id == null) {
             throw new BusinessException("invalid contact id data passed into service method");
         }

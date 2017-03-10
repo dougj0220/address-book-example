@@ -1,31 +1,25 @@
 package io.doug.controller;
 
-import io.doug.TestRestApplication;
 import io.doug.entity.User;
 import io.doug.service.UserService;
 import org.junit.Before;
 import org.junit.runner.RunWith;
-import org.mockito.MockitoAnnotations;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
-import org.springframework.boot.test.SpringApplicationConfiguration;
-import org.springframework.boot.test.WebIntegrationTest;
+import org.springframework.boot.test.autoconfigure.web.servlet.WebMvcTest;
 import org.springframework.http.MediaType;
 import org.springframework.security.test.web.servlet.request.SecurityMockMvcRequestPostProcessors;
 import org.springframework.test.context.junit4.SpringRunner;
 import org.springframework.test.web.servlet.MockMvc;
 import org.springframework.test.web.servlet.request.MockHttpServletRequestBuilder;
 import org.springframework.test.web.servlet.request.MockMvcRequestBuilders;
-import org.springframework.test.web.servlet.setup.MockMvcBuilders;
 import org.springframework.util.Base64Utils;
 import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.context.WebApplicationContext;
 
 import javax.transaction.Transactional;
 
 import static org.hamcrest.Matchers.*;
 import static org.springframework.security.test.web.servlet.request.SecurityMockMvcRequestPostProcessors.user;
-import static org.springframework.security.test.web.servlet.setup.SecurityMockMvcConfigurers.springSecurity;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.post;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.*;
 
@@ -34,22 +28,20 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
  */
 @Transactional
 @RunWith(SpringRunner.class)
-@WebIntegrationTest
-@SpringApplicationConfiguration(classes = TestRestApplication.class)
-//@WebMvcTest(value = {ContactController.class, UserController.class, OAuthController.class})
+//@SpringBootTest(webEnvironment= SpringBootTest.WebEnvironment.RANDOM_PORT)
+@WebMvcTest(value = {ContactController.class, UserController.class, OAuthController.class})
 public abstract class AbstractControllerTest {
 
-    protected static final String ADMIN_PASSWORD = "password";
+    static final String ADMIN_PASSWORD = "password";
 
     @Autowired
-    WebApplicationContext context;
+    UserService userService;
 
     @Autowired
-    protected UserService userService;
+    MockMvc mockMvc;
 
-    protected MockMvc mockMvc;
-    protected User adminUser;
-    protected String accessToken;
+    User adminUser;
+    String accessToken;
 
     @Value("${oauth2.client.id}")
     private String getClientId;
@@ -59,12 +51,12 @@ public abstract class AbstractControllerTest {
 
     @Before
     public void setUp() throws Exception {
-       MockitoAnnotations.initMocks(this);
+       //MockitoAnnotations.initMocks(this);
 
-       mockMvc = MockMvcBuilders.webAppContextSetup(context)
+       /*mockMvc = MockMvcBuilders.webAppContextSetup(context)
                //.addFilter(springSecurityFilterChain)
                .apply(springSecurity())
-               .build();
+               .build();*/
 
         adminUser = userService.getByLogin("admin@doug.com");
 
@@ -75,11 +67,11 @@ public abstract class AbstractControllerTest {
 
     abstract public void before() throws Exception;
 
-    protected MockHttpServletRequestBuilder buildRequest(RequestMethod method, String uri, boolean withAuthHeader) {
+    MockHttpServletRequestBuilder buildRequest(RequestMethod method, String uri, boolean withAuthHeader) {
         return buildRequest(method, uri, withAuthHeader, true, null);
     }
 
-    protected MockHttpServletRequestBuilder buildRequest(RequestMethod method, String uri, boolean withAuthHeader, boolean withAdminUser, User notAdminUser) {
+    MockHttpServletRequestBuilder buildRequest(RequestMethod method, String uri, boolean withAuthHeader, boolean withAdminUser, User notAdminUser) {
 
         MockHttpServletRequestBuilder builder;
 
@@ -114,7 +106,7 @@ public abstract class AbstractControllerTest {
     }
 
 
-    protected String getAccessToken(String username, String password) throws Exception {
+    String getAccessToken(String username, String password) throws Exception {
         String authorization = "Basic " + new String(Base64Utils.encode((getClientId + ":" + getClientSecret).getBytes()));
         String contentType = MediaType.APPLICATION_JSON + ";charset=UTF-8";
 

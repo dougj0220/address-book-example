@@ -1,4 +1,3 @@
-# Spring properties
 spring:
   application:
     name: ab-domain
@@ -18,12 +17,5 @@ spring:
     properties:
         hibernate:
             dialect: org.hibernate.dialect.MySQL5Dialect
-oauth2:
-  client:
-    id: 1443640831942
-    secret: $2a$10$tlW.5uo8z5UZd6/56dRZC.gKlJv2OKrwZzMvjN1ZlXmQgzNlwXwdi
-logging:
-  path: target/logs
-
 doug:
-  test: hello from ab-domain proper
+  test: hello from sevice test side of the house

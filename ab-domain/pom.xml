@@ -19,7 +19,6 @@
         <skip.liquibase>false</skip.liquibase>
     </properties>
 
-
     <build>
         <finalName>ab-domain</finalName>
         <plugins>

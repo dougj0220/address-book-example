@@ -24,6 +24,9 @@ oauth2:
     secret: $2a$10$tlW.5uo8z5UZd6/56dRZC.gKlJv2OKrwZzMvjN1ZlXmQgzNlwXwdi
 logging:
   path: target/logs
-
+security:
+  oauth2:
+    resource:
+      filter-order: 3
 doug:
   test: hello from ab-domain proper

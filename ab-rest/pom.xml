@@ -16,27 +16,15 @@
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <java.version>1.8</java.version>
-        <spring-security-oauth2.version>2.0.7.RELEASE</spring-security-oauth2.version>
         <docker.image.prefix>docker</docker.image.prefix>
     </properties>
 
     <dependencies>
+
         <dependency>
             <groupId>io.doug</groupId>
             <artifactId>ab-domain</artifactId>
             <version>1.0-SNAPSHOT</version>
-        </dependency>
-
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-tomcat</artifactId>
-            <scope>provided</scope>
-        </dependency>
-
-        <dependency>
-            <groupId>org.springframework.security.oauth</groupId>
-            <artifactId>spring-security-oauth2</artifactId>
-            <version>${spring-security-oauth2.version}</version>
         </dependency>
 
         <dependency>

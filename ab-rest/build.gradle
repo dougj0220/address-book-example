@@ -1,0 +1,12 @@
+
+description = 'ab-rest'
+dependencies {
+  compile project(':ab-domain')
+    compile group: 'org.springframework.security.oauth', name: 'spring-security-oauth2', version:'2.0.7.RELEASE'
+    compile group: 'org.springframework.security', name: 'spring-security-test', version:'4.1.0.RELEASE'
+    compile(group: 'org.springframework.boot', name: 'spring-boot-starter-tomcat', version:'1.4.4.RELEASE') {
+       /* This dependency was originally in the Maven provided scope, but the project was not of type war.
+       This behavior is not yet supported by Gradle, so this dependency has been converted to a compile dependency.
+       Please review and delete this closure when resolved. */
+    }
+}
